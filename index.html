@@ -1,0 +1,63 @@
+<!DOCTYPE html">
+<html lang="pt-br">
+
+<head>
+	<div class="container">
+	<title>Aplicacion de Registros</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+
+	<script src="myscript.js"></script>
+
+
+<body>
+	<div class="all">
+		<h1 class="title">Aplicacion web Para Registrar</h1>
+		<div class="center-fixed">
+			<form id="frmCadastro">
+				<label for="txtNome">Nombre</label><br>
+				<input type="text" id="txtNome" placeholder="Nombre"><br>
+
+				<label for="dtpDataNascimento">Fecha de Nascimento</label><br>
+				<input type="date" id="dtpDataNascimento" value="1990-08-29" required>
+
+				<fieldset>
+					<legend>Sexo</legend>
+					<input type="radio" name="genero" value="male" id="rdoMasculino" checked>
+					<label for="rdoMasculino">Masculino</label><br>
+
+					<input type="radio" name="genero" value="female" id="rdoFeminino">
+					<label for="rdoFeminino">Feminino</label>
+				</fieldset>
+
+				<input type="submit" name="" id="btnCadastrarSalvar" value="Registrar">
+			</form>
+		</div>
+		<table>
+			<caption>
+				<h2>Registros</h2>
+			</caption>
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Nombre</th>
+					<th>Fecha de Nascimento</th>
+					<th>Sexo</th>
+					<th>Ultima Actualizacion</th>
+					<th>Eliminar</th>
+					<th>Actualizar</th>
+				</tr>
+			</thead>
+			<tbody id="tbodyResultados"></tbody>
+			<tfoot></tfoot>
+		</table>
+	</div>
+</body>
+
+	<div class="Cont1">
+	<h1>Esta Aplicacion fue realizada por Pedro Luis Isidro Cazorla</h1>
+	</div>
+	</div>
+</head>
+
+</html>
